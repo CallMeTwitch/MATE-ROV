@@ -7,7 +7,7 @@ class Detection:
     # Initialize Class Variables
     def __init__(self):
         self.video = cv2.VideoWriter('morts.avi', 0, 30, (416, 416))
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'clean/best2.pt', force_reload = False)
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'MortDifferentiation/best2.pt', force_reload = False)
         
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
