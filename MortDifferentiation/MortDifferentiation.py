@@ -36,7 +36,7 @@ class Detection:
     
     # Run
     def __call__(self):
-        cap = cv2.VideoCapture('MortDifferentiation/test.mp4')
+        cap = cv2.VideoCapture('MortDifferentiation/test2.mp4')
         assert cap.isOpened()
 
         while 1:
